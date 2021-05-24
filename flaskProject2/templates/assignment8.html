@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>‘assignment8</title>
+    {% include('include_css.html') %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <div class="row background-image"div>
+{%extends 'MYCV.html' %}
+{% block body %}
+
+        <body dir="rtl">
+     <div>
+         {% set user= {'firstname': "אופיר" ,'lastname':"אביטבול"}%}
+         <h1>עכשיו את הולך לצפות בתחביבים של {{ user.firstname }} {{ user.lastname }}</h1>
+     <ul>
+    {% for hobby in hobbies %}
+        <h3> {{ hobby }}</h3>
+     {% endfor %}
+     </ul>
+         {% set books= {'name': "נשבעת" ,'authorname':"שרה פיינבורו"}%}
+        {% if  books%}
+            <h4>You have read enough books </h4>
+        {% else %}
+            <h4>You have not read enough books!</h4>
+        {% endif %}
+
+</body>
+ {% endblock %}
+</html>
