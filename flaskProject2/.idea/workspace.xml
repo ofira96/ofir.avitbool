@@ -41,10 +41,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flaskProject" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Flask server.flaskProject2">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="flaskOfirAvitbool" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,6 +142,11 @@
       <workItem from="1621955351929" duration="3049000" />
       <workItem from="1621958665565" duration="18000" />
       <workItem from="1622529964584" duration="1674000" />
+      <workItem from="1622545134083" duration="16000" />
+      <workItem from="1622545156721" duration="29000" />
+      <workItem from="1622545232425" duration="153000" />
+      <workItem from="1623149596047" duration="28000" />
+      <workItem from="1623149744493" duration="14000" />
     </task>
     <servers />
   </component>
