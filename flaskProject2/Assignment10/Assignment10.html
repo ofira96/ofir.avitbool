@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment10</title>
+    {% include('include_css.html') %}
+</head>
+<body>
+    {%  with messages= get_flashed_messages()%}
+        {% if  messages %}
+            {% for message in messages%}
+            <h2> {{ message }}</h2>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    {% include('Add_user.html') %}
+
+    {% include('assignment9.html') %}
+    <br><br>
+    <a href="/MYCV">
+        <button class="buttonsdesin" style="margin: 0px;" type="button">back to CV</button>
+    </a>
+</body>
+</html>
