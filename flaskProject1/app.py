@@ -88,5 +88,8 @@ def interact_db(query, query_type: str):
 from assignment10.assignment10 import assignment10
 app.register_blueprint(assignment10)
 
+from assignment11.assignment11 import assignment11
+app.register_blueprint(assignment11)
+
 if __name__ == '__main__':
     app.run(debug=True)

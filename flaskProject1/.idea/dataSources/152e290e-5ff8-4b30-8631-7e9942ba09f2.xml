@@ -940,19 +940,25 @@ password</ColNames>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="292" parent="286" name="Email">
+    <column id="292" parent="286" name="userId">
       <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="293" parent="286" name="Email">
+      <Position>3</Position>
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="293" parent="286" name="Password">
-      <Position>3</Position>
+    <column id="294" parent="286" name="Password">
+      <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="294" parent="286" name="PRIMARY">
+    <key id="295" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>Email</ColNames>
+      <ColNames>userId
+Email</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>
