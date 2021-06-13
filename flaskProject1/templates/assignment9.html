@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>assignment9</title>
+    {% include('include_css.html') %}
+</head>
+<body>
+   <h2>The method of this request is: {{ request_method }}</h2>
+
+
+    Form:
+    <form method="GET" action ="/assignment9">
+    <label for="FirstName">Search by first name:</label>
+    <input id='FirstName' name="FirstName"><br><br>
+    <input type="submit" value="Search">
+    </form>
+
+    {% if FirstName=='NONE'%}
+
+    {% else %}
+        {% if FirstName == ''%}
+            <ol>
+                <li>Michael Lawson</li>
+                <li>Lindsay Ferguson</li>
+                <li>Tobias Funke</li>
+                <li>Byron Fields</li>
+                <li>George Edwards</li>
+                 <li>Rachel Howell</li>
+            </ol>
+        {% endif%}
+
+    {% endif%}
+
+<br>
+{% if FirstName %}
+            <h2>Welcome, {{ FirstName}} {{Users[FirstName]}} ! </h2>
+            {% else %}
+            <h2> Welcome, Friend !</h2>
+{% endif %}
+
+<br><br><br><br>
+
+
+<h2> Registration Form:</h2>
+
+    {% if username %}
+            <h2>Welcome, {{ username}} ! </h2>
+            {% else %}
+            <h2> Welcome, Stranger !</h2>
+{% endif %}
+    <form method="POST" action ="/assignment9">
+    <label for="username">Username:</label>
+    <input id='username' name="username"><br><br>
+    <label for="Email">Email:</label>
+    <input id='Email' name="Email"><br><br>
+     <label for="Password">Password:</label>
+    <input id='Password' name="Password"><br><br>
+    <input type="submit" value="Log in">
+    </form>
+
+<br> <br>
+<a href = "/log_out"><input type="submit" value="Log Out"></a>
+
+</body>
+</html>
